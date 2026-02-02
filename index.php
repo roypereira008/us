@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Audio (Hidden) - Replace source with actual file -->
+    <audio id="bg-music" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Background Floating Hearts -->
+    <div class="bg-hearts"></div>
+
+    <!-- Section 1: Landing Page -->
+    <section id="landing-page" class="active">
+        <h1>HOPE NEVER DISAPPOINTS</h1>
+        <p>A journey of love, memories, and forever.</p>
+        <button id="start-btn">Start Journey ❤️</button>
+    </section>
+
+    <!-- Section 2: Valentine Question -->
+    <section id="valentine-question">
+        <h1>Will you be my Valentine?</h1>
+        <div class="btn-group">
+            <button id="yes-valentine-btn">YES! 💖</button>
+        </div>
+        <button class="back-btn" style="margin-top: 20px; font-size: 1rem; padding: 10px 20px;">⬅️ Back</button>
+    </section>
+
+    <!-- Section 3: Photo Placards -->
+    <section id="photo-placards">
+        <h1>Our Memories</h1>
+        <p style="font-size: 1rem; color: #777; margin-bottom: 30px;">(Click on a photo to reveal a memory ✨)</p>
+        <div class="photo-grid">
+            <!-- Items -->
+            <div class="photo-card">
+                <img src="assets/dogs_placard.jpg" alt="Her love for dogs" onerror="this.src='https://placehold.co/200x200?text=Dogs'">
+                <div class="message">Her love for dogs 🐶</div>
+            </div>
+            <div class="photo-card">
+                <img src="assets/mcdonalds_placard.jpg" alt="McDonald's Dates" onerror="this.src='https://placehold.co/200x200?text=McDonalds'">
+                <div class="message">McDonald's Dates 🍟</div>
+            </div>
+            <div class="photo-card">
+                <img id="baking-photo" src="assets/baking_placard.jpg" alt="Sweet Baking Moments" onerror="this.src='https://placehold.co/200x200?text=Baking'">
+                <div class="message">Sweet Baking Moments 🧁</div>
+            </div>
+            <div class="photo-card">
+                <img src="assets/dance_placard.jpg" alt="You own the stage" onerror="this.src='https://placehold.co/200x200?text=Dancing'">
+                <div class="message">You own the stage 💃</div>
+            </div>
+        </div>
+        <div>
+            <button class="back-btn" style="margin-top: 30px; font-size: 1rem; padding: 10px 20px;">⬅️ Back</button>
+            <button id="next-photos-btn" style="margin-top: 30px;">Continue ➡️</button>
+        </div>
+    </section>
+
+    <!-- Section 4: Love Messages -->
+    <section id="love-messages">
+        <h1>Notes of Love</h1>
+        <div class="envelope-container">
+            <div class="envelope" data-target="msg-1">💌</div>
+            <div class="envelope" data-target="msg-2">💌</div>
+            <div class="envelope" data-target="msg-3">💌</div>
+        </div>
+
+        <!-- Popups -->
+        <div id="msg-1" class="envelope-content">
+            <p>Every moment with you is a treasure.</p>
+            <button class="close-btn">Close</button>
+        </div>
+        <div id="msg-2" class="envelope-content">
+            <p>You make my heart smile.</p>
+            <button class="close-btn">Close</button>
+        </div>
+        <div id="msg-3" class="envelope-content">
+            <p>I can't imagine life without you.</p>
+            <button class="close-btn">Close</button>
+        </div>
+
+        <div>
+            <button class="back-btn" style="margin-top: 50px; font-size: 1rem; padding: 10px 20px;">⬅️ Back</button>
+            <button id="next-messages-btn" style="margin-top: 50px;">One Last Thing... ➡️</button>
+        </div>
+    </section>
+
+    <!-- Section 5: Final Proposal -->
+    <section id="final-proposal">
+        <p>From Valentine...</p>
+        <p>To Forever...</p>
+        <h1>Will you marry me? 💍</h1>
+        <p style="font-size: 0.9rem; color: #777; margin-bottom: 20px;">(You are caught up forever, no way back)</p>
+        
+        <button id="final-yes-btn" style="font-size: 1.5rem; padding: 15px 40px; background-color: #FF0000; color: white;">YES! 💍</button>
+
+        <div id="final-success-msg" style="display: none; margin-top: 30px;">
+            <h2 style="color: #FF1493; font-family: 'Great Vibes', cursive; font-size: 3rem;">Haanv tukka mogh karta ❤️</h2>
+            <h3 style="color: #333; margin-top: 20px;">Asta Roy Pereira</h3>
+            <p style="font-style: italic; max-width: 600px; margin: 30px auto; font-size: 1.1rem; line-height: 1.6;">
+                "I, Roy take you, Asta , to be my lawful wife, to have and to hold from this day forward, for better, for worse, for richer, for poorer, in sickness and in health, until death do us part."
+            </p>
+        </div>
+    </section>
+
+    <div id="hashtag-note">#ASROTACIOUS</div>
+    <script src="script.js"></script>
+</body>
+</html>
